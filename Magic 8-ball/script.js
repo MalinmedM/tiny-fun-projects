@@ -13,11 +13,23 @@ const responses = [
 
 // Step 2: Function to give a random response
 function shake8Ball() {
-    let randomIndex = Math.floor(Math.random() * responses.length);
-    let randomResponse = responses[randomIndex];
+    let ball = document.getElementById("shakeBtn"); // Target the button
 
-    document.getElementById("answer").textContent = randomResponse;
+    // Add the shaking class
+    ball.classList.add("shaking");
+
+    // Wait for the shake animation to finish (0.5s), then show the answer
+    setTimeout(() => {
+        let randomIndex = Math.floor(Math.random() * responses.length);
+        let randomResponse = responses[randomIndex];
+
+        document.getElementById("answer").textContent = randomResponse;
+        
+        // Remove the shaking class so it can be triggered again
+        ball.classList.remove("shaking");
+    }, 500); // Matches animation duration (0.5s)
 }
 
 // Step 3: Add an event listener to the button
 document.getElementById("shakeBtn").addEventListener("click", shake8Ball);
+
