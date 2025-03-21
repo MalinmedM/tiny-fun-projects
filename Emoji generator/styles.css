@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 50px;
 }
 
@@ -12,5 +12,6 @@ button {
 }
 
 #emoji {
-    font-size: 24px;
+    font-size: 50px; /* Bigger for visibility */
+    margin-top: 20px; /* Adds spacing below the button */
 }
