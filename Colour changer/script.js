@@ -1,4 +1,4 @@
-const clourBtn =document.getElementById(colourBtn);
+const clourBtn =document.getElementById("colourBtn");
 
 const colours = [
     "#FF5733", 
@@ -11,5 +11,6 @@ const colours = [
 colourBtn.addEventListener("click", function() {
     let randomIndex = Math.floor(Math.random() * colours.length);
     let randomColour = colours[randomIndex];
+    document.body.style.backgroundColor = randomColour;
     document.getElementById("hex-code").textContent = randomColour;
 });
