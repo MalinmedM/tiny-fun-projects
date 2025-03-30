@@ -8,11 +8,12 @@ button {
     padding: 8px 15px;
     font-size: 20px;
     cursor: pointer;
-    border: dotted 2px #33e4ff;
+    border: dotted 5px #33e4ff;
 }
 
 p {
     font-size: 24px;
     margin-top: 10px;
     font-weight: 700;
+    text-transform: capitalize;
 }
