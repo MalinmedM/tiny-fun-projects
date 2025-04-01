@@ -1,3 +1,0 @@
-var guessInput = document.querySelector("#guess");
-var guessBtn = document.querySelector("#guessBtn");
-var resultText = document.querySelector("#result");
