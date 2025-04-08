@@ -1,0 +1,10 @@
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}

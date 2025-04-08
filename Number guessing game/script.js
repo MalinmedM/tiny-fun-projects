@@ -11,11 +11,11 @@ guessBtn.addEventListener("click", function() {
 
         if (randomNumber === userGuess) {
             resultText.textContent = "You guessed right!";
-            resultText.style.color = "green";
+            resultText.classList.add("correct");
         } else {
             guessesLeft--;
             resultText.textContent = `Nope, it was ${randomNumber}. You have ${guessesLeft} guesses left.`;
-            resultText.style.color = "red";
+            resultText.classList.add("wrong");
         }
 
         //clears input field
