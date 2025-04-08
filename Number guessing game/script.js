@@ -1,6 +1,7 @@
 const guessInput = document.querySelector("#guessInput");
 const guessBtn = document.querySelector("#guessBtn");
 const resultText = document.querySelector("#result");
+const resetBtn = document.querySelector("#resetBtn");
 let guessesLeft = 3;
 
 guessBtn.addEventListener("click", function() {
@@ -12,9 +13,10 @@ guessBtn.addEventListener("click", function() {
             resultText.textContent = "You guessed right!";
         } else {
             guessesLeft--;
-            resultText.textContent = `Nope, it was ${+ randomNumber}. You have ${guessesLeft} guesses left.`;
+            resultText.textContent = `Nope, it was ${randomNumber}. You have ${guessesLeft} guesses left.`;
         }
 
+        //clears input field
         guessInput.value = "";
 
         if (guessesLeft === 0) {
@@ -23,4 +25,11 @@ guessBtn.addEventListener("click", function() {
         }
     }
     
+});
+
+//reset button to play more times
+resetBtn.addEventListener("click", function() {
+    guessesLeft = 3;
+    resultText.textContent = "";
+    guessBtn.disabled = false;
 });
