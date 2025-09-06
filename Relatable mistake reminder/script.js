@@ -8,4 +8,13 @@ const reminders = [
     "Classic me. At least I’m consistent!",
     "We grow through what we mess up. Probably.",
     "One small mistake for man, one giant LOL for mankind."
-    ]; 
+    ];
+
+    const button = document.querySelector("#new-reminder");
+    const text = document.querySelector("#reminder-text");
+
+    button.addEventListener("click", function() {
+        const randomIndex = Math.floor(Math.random() * reminders.length);
+        text.textContent = reminders[randomIndex];
+    });
+    
