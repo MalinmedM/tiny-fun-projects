@@ -18,14 +18,25 @@
       max-width: 360px;
     }
     .card h1 {
-      font-size: 1.4em;
+      font-size: 1.6em;
       margin-bottom: 1em;
       color: #e76f51;
     }
     .card p {
       font-size: 1.1em;
       color: #333;
-      margin-bottom: 0.5em;
+      /*margin-bottom: 0.5em;*/
+    }
+
+    #new-reminder {
+      padding: 12px 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1.1em;
+      border-radius: 8px;
+      letter-spacing: 1px;
+      background-color: lightcyan;
+      border: 2px dotted cyan;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
 /*Creates a fade-in of 300ms when added to an element*/
