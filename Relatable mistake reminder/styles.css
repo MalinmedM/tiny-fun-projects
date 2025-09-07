@@ -1,4 +1,4 @@
- <style>
+ 
     body {
       background: #fef9f5;
       display: flex;
@@ -27,7 +27,6 @@
       color: #333;
       margin-bottom: 0.5em;
     }
-  </style>
 
 /*Creates a fade-in of 300ms when added to an element*/
   @keyframes fadeIn {
