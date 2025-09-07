@@ -28,3 +28,13 @@
       margin-bottom: 0.5em;
     }
   </style>
+
+/*Creates a fade-in of 300ms when added to an element*/
+  @keyframes fadeIn {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+.fade {
+  animation: fadeIn 300ms ease-in;
+}
