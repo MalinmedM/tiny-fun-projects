@@ -16,9 +16,13 @@ const reminders = [
     button.addEventListener("click", function() {
         const randomIndex = Math.floor(Math.random() * reminders.length);
         text.textContent = reminders[randomIndex];
+
+        console.log(`adding fade`);   //should print each click
         text.classList.add("fade");
+
         //listen once for the end of the animation, then remove the class
         text.addEventListener("animationend", function handler() {
+            console.log(`animation ended`);   // should print after 300ms
             text.classList.remove("fade");
             text.removeEventListener("animationend", handler);
         });

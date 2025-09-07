@@ -36,5 +36,5 @@
 }
 
 .fade {
-  animation: fadeIn 300ms ease-in;
+  animation: fadeIn 1000ms ease-in;
 }
