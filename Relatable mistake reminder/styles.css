@@ -37,6 +37,7 @@
       background-color: lightcyan;
       border: 2px dotted cyan;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      color: turquoise;
     }
 
 /*Creates a fade-in of 300ms when added to an element*/
