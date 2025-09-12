@@ -1,4 +1,6 @@
 let currentIndex = 0;
+const affirmation = document.querySelector("#Affirmation");
+const nextBtn = document.querySelector("#next-btn");
 
 const affirmations = [
     "Titration, titration, titration.",
@@ -8,3 +10,6 @@ const affirmations = [
     "Pausing is allowed. Resting is allowed."
 ];
 
+nextBtn.addEventListener("click", function() {
+    
+})
